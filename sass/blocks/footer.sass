@@ -1,0 +1,95 @@
+.footer
+    padding: 36px
+    background-color: #000
+    &-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-contacts
+        order: 2
+        flex-direction: column
+        &__firmName
+            font-weight: 700
+            font-family: "Montserrat"
+            font-size: 18px
+            color: $white-color
+    &-address
+        display: flex
+        align-items: center
+        &:not(&:last-child)
+            margin-bottom: 10px
+        &__text
+            color: #D1D0D0
+            font-weight: 400
+            font-family: "Montserrat"
+            font-size: 18px
+            margin-left: 10px
+            color: #B9BABE
+    &-logo
+        order: 1
+    &-documents
+        order: 3
+        flex-direction: column
+        &__item
+            font-weight: 500
+            font-family: "Montserrat"
+            font-size: 18px
+            color: #D1D0D0
+            text-align: right
+
+@media (min-width: 320px) and ( max-width:  576px)
+    .footer
+        background: url("../../img/footer/mobVersion/bg.png") center center no-repeat
+        background-size: cover
+        padding: 0
+        padding-top: 60px
+        padding-bottom: 104px
+        &-content
+            width: 80%
+            margin: 0 auto
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-contacts
+            &__firmName
+                text-align: center
+                margin-top: 60px
+                margin-bottom: 20px
+        &-address
+            img
+                width: 20px
+            &__text
+                font-size: 14px
+        &-documents
+            margin-top: 40px
+            &__item
+                text-align: center
+                font-size: 16px
+
+@media (min-width: 576px) and ( max-width:  900px)
+    .footer
+        background: url("../../img/footer/mobVersion/bg.png") center center no-repeat
+        background-size: cover
+        padding: 0
+        padding: 60px 0px
+        &-content
+            width: 80%
+            margin: 0 auto
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-contacts
+            &__firmName
+                text-align: center
+                margin-top: 60px
+                margin-bottom: 20px
+        &-address
+            img
+                width: 20px
+            &__text
+                font-size: 14px
+        &-documents
+            margin-top: 40px
+            &__item
+                text-align: center
+                font-size: 16px

@@ -1,0 +1,52 @@
+/*
+Error: Invalid CSS after "0px 4px 10px ": expected expression (e.g. 1px, bold), was "#00000059"
+        on line 5 of C:\Users\user\Desktop\credit.local\sass\blocks\nav.sass
+
+1: .nav
+2:     padding-top: 11px
+3:     padding-bottom: 11px
+4:     background-color: #071220
+5:     box-shadow: 0px 4px 10px #00000059
+6:     backdrop-filter: blur(113px)
+7:     &-block
+8:         display: flex
+9:         justify-content: space-between
+10:         align-items: center
+
+Backtrace:
+C:\Users\user\Desktop\credit.local\sass\blocks\nav.sass:5
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:761:in `assert_done'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:69:in `parse'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:228:in `parse'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/script.rb:27:in `parse'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1177:in `parse_script'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:749:in `parse_property'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:708:in `parse_property_or_rule'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:667:in `parse_line'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/koala/bin/sass:22:in `load'
+D:/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"0px 4px 10px \": expected expression (e.g. 1px, bold), was \"#00000059\"\A         on line 5 of C:\Users\user\Desktop\credit.local\sass\blocks\nav.sass\A \A 1: .nav\A 2:     padding-top: 11px\A 3:     padding-bottom: 11px\A 4:     background-color: #071220\A 5:     box-shadow: 0px 4px 10px #00000059\A 6:     backdrop-filter: blur(113px)\A 7:     &-block\A 8:         display: flex\A 9:         justify-content: space-between\A 10:         align-items: center"; }

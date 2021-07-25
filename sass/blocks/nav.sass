@@ -1,0 +1,51 @@
+.nav
+    padding-top: 11px
+    padding-bottom: 11px
+    background-color: #071220
+    box-shadow: 0px 4px 10px #00000059
+    backdrop-filter: blur(113px)
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 284px
+        &__title
+            color: #5BFF7A
+            font-size: 18px
+            font-weight: 800
+            font-family: "Geometria"
+            margin-left: 18px
+    &-contact
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__phone
+            font-size: 14px
+            font-weight: 800
+            color: $white-color
+            font-family: "Roboto"
+            color: #D1D0D0
+            margin-left: 7px
+
+@media (min-width: 320px) and ( max-width:  576px)
+    .nav
+        padding: 0
+        &-block
+            padding: 15px
+            width: 80%
+            margin: 0 auto
+        &-logo
+            &__title
+                display: none
+        &-contact
+            img
+                display: none
+@media (min-width: 576px) and ( max-width:  1250px)
+    .nav
+        &-block
+            width: 90%
+            margin: 0 auto

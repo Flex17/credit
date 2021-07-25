@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="fonts/Bebas Neue/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Geometria/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Montserrat/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Credit</title>
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-body">
+            <a class="modal-close" onclick="windowClose()">
+                <img src="img/modal/close.png" alt="img">
+            </a>
+            <!-- /.modal-close -->
+            <form action="#" method="POST" class="form modal-form" id="form">
+                <h2 class="section-title modal-body__title">Оставь свои <br> контактные данные</h2>
+                <!-- /.section-title modal-title -->
+                <p class="modal-body__subtitle">Чтобы получать самые <br> выгодные предложения</p>
+                <!-- /.modal-body__subtitle -->
+                <input required type="text" name="name" placeholder="Ваше имя" class="input modal-body__input">
+                <input required type="text" name="phone" placeholder="Ваш телефон" class="input modal-body__input">
+                <input required type="text" name="amount" placeholder="Сумма кредита (от 150 т.руб)" class="input modal-body__input">
+                <button class="button modal-body__button" name="submit">Получить деньги</button>
+                <!-- /.button modal-body__button -->
+                <div class="modal-accept">
+                    <div class="modal-accept__square">
+                        <img class="modal-accept__false" id="false" src="img/modal/false.png" alt="img" onclick="trueOpen()">
+                        <img class="modal-accept__true" id="true" src="img/modal/true.png" alt="img" onclick="falseClose()">
+                    </div>
+                    <!-- /.modal-accept__square -->
+                    <p class="modal-accept__text">Согласен на обработку персональных данных в соответствии с политикой конфиденциальности</p>
+                    <!-- /.modal-accept__text -->
+                </div>
+                <!-- /.modal-body__accept -->
+            </form>
+            <!-- /.form modal-form -->
+        </div>
+        <!-- /.modal-body -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="nav">
+        <div class="container">
+            <div class="nav-block">
+                <div class="nav-logo">
+                    <img src="img/nav/logo.svg" alt="img">
+                    <p class="nav-logo__title">Кредиты наличными без отказа</p>
+                    <!-- /.nav-logoTitle -->
+                </div>
+                <!-- /.nav-logo -->
+                <div class="nav-contact">
+                    <img src="img/nav/phone.png" alt="img">
+                    <a class="nav-contact__phone" href="tel:+74954258956">+7 (495) 425-89-56</a>
+                </div>
+            </div>
+            <!-- /.nav-block -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.nav -->
+    <div class="main section">
+        <div class="container">
+            <div class="main-content">
+                <h1 class="main-content__title">Кредитная помощь</h1>
+                <span class="main-content__subtitle">В казани и республике татарстан</span>
+                <p class="main-content__about">Кредиты наличными и на карту, <br> от 150 т. руб, под 6,5%</p>
+                <div class="main-advantages">
+                    <div class="main-advantages__item">
+                        <img src="img/main/1.png" alt="img">
+                        <p class="main-advantages__text">Ваша кредитная история не важна</p>
+                    </div>
+                    <!-- /.main-advantages__item -->
+                    <div class="main-advantages__item">
+                        <img src="img/main/2.png" alt="img">
+                        <p class="main-advantages__text">Без банков, без  справки о доходах, залога и поручителей</p>
+                    </div>
+                    <!-- /.main-advantages__item -->
+                    <div class="main-advantages__item">
+                        <img src="img/main/3.png" alt="img">
+                        <p class="main-advantages__text">Одобряем заявку за 20 минут</p>
+                    </div>
+                    <!-- /.main-advantages__item -->
+                </div>
+                <!-- /.main-advantages -->
+                <button class="button main-button" onclick="windowUp()">Получить деньги</button>
+                <!-- /.button main-button -->
+            </div>
+            <!-- /.main-content -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main section -->
+    <div class="problems section">
+        <div class="container">
+            <div class="problems-content">
+                <h2 class="section-title problems-content__title">У вас финансовые <br> проблемы?</h2>
+                <span class="section-subtitle problems-content__subtitle">Мы все понимаем <br> и одобрим заявку на кредит, даже если:</span>
+                <div class="problems-features">
+                    <div class="problems-firstBlock">
+                        <div class="problems-features__item">
+                            <span class="problems-features__text">Нет официального <br> трудоустройства</span>
+                        </div>
+                        <!-- /.problems-features__item -->
+                        <div class="problems-features__item">
+                            <span class="problems-features__text">Отказали в других <br> банках</span>
+                        </div>
+                        <!-- /.problems-features__item -->
+                        <div class="problems-features__item">
+                            <span class="problems-features__text">Уже есть один или <br> несколько кредитов</span>
+                        </div>
+                        <!-- /.problems-features__item -->
+                    </div>
+                    <!-- /.problems-firstBlock -->
+                    <div class="problems-secondBlock problems-first-block">
+                        <div class="problems-features__item">
+                            <span class="problems-features__text">Есть открытые просрочки по <br> займам и долги  (ЖКХ, ФССП и т.п.)</span>
+                        </div>
+                        <!-- /.problems-features__item -->
+                        <div class="problems-features__item">
+                            <span class="problems-features__text">Плохая кредитная <br> история</span>
+                        </div>
+                        <!-- /.problems-features__item -->
+                        <div class="problems-features__item">
+                            <span class="problems-features__text">Сложно разобраться с документами <br> для получения кредита</span>
+                        </div>
+                        <!-- /.problems-features__item -->
+                    </div>
+                    <!-- /.problems-secondBlock -->
+                </div>
+                <!-- /.problems-features -->
+                <img class="problems-man" src="img/problems/man.png" alt="img">
+                <div class="problems-wrap">
+                    <img class="problems-wrap__manMobVersion" src="img/problems/mobVersion/man.png" alt="img">
+                </div>
+                <!-- /.problems-wrap -->
+                <button class="problems-button--green" onclick="windowUp()">Оставьте заявку и мы подберем кредит <br> на максимально выгодных условиях</button>
+                <!-- /.problems-button--green -->
+                <div class="problems-advantages">
+                    <div class="problems-advantages__item">
+                        <img src="img/problems/1.png" alt="img">
+                        <p class="problems-advantages__text">От 150 тысяч <br> до 15 млн руб</p>
+                    </div>
+                    <!-- /.problems-advantages__item -->
+                    <div class="problems-advantages__item">
+                        <img src="img/problems/2.png" alt="img">
+                        <p class="problems-advantages__text">Работаем <br> без предоплаты</p>
+                    </div>
+                    <!-- /.problems-advantages__item -->
+                    <div class="problems-advantages__item">
+                        <img src="img/problems/3.png" alt="img">
+                        <p class="problems-advantages__text">Без звонков <br> и посещений банка</p>
+                    </div>
+                    <!-- /.problems-advantages__item -->
+                    <div class="problems-advantages__item">
+                        <img src="img/problems/4.png" alt="img">
+                        <p class="problems-advantages__text">Без страховок <br> и скрытых комиссий</p>
+                    </div>
+                    <!-- /.problems-advantages__item -->
+                </div>
+                <!-- /.problems-advantages -->
+                <button class="button problems-button" onclick="windowUp()">Получить деньги</button>
+                <!-- /.button problems-button -->
+            </div>
+            <!-- /.problems-content -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.problems section -->
+    <div class="partners section">
+        <div class="container">
+            <div class="partners-content">
+                <h2 class="partners-content__title section-title partners-content__deskVersion">Наши банки-партнеры</h2>
+                <!-- /.partner-title section-title -->
+                <h2 class="partners-content__title section-title partners-content__mobVersion">Наши <br> банки-партнеры</h2>
+                <!-- /.partner-title section-title -->
+                <div class="partners-block">
+                    <div class="partners-row">
+                        <div class="partners-row__item">
+                            <img src="img/partners/row1/1.png" alt="img">
+                        </div>
+                        <div class="partners-row__item">
+                            <img src="img/partners/row1/2.png" alt="img">
+                        </div>
+                        <div class="partners-row__item">
+                            <img src="img/partners/row1/3.png" alt="img">
+                        </div>
+                    </div>
+                    <!-- /.partners-row -->
+                    <div class="partners-row">
+                        <div class="partners-row__item">
+                            <img src="img/partners/row2/1.png" alt="img">
+                        </div>
+                        <div class="partners-row__item">
+                            <img src="img/partners/row2/2.png" alt="img">
+                        </div>
+                        <div class="partners-row__item">
+                            <img src="img/partners/row2/3.png" alt="img">
+                        </div>
+                    </div>
+                    <!-- /.partners-row -->
+                    <div class="partners-row">
+                        <div class="partners-row__item">
+                            <img src="img/partners/row3/1.png" alt="img">
+                        </div>
+                        <div class="partners-row__item partners-row__homeCreditBank">
+                            <img src="img/partners/row3/2.png" alt="img">
+                        </div>
+                        <div class="partners-row__item">
+                            <img src="img/partners/row3/3.png" alt="img">
+                        </div>
+                    </div>
+                    <!-- /.partners-row -->
+                    <div class="partners-row">
+                        <div class="partners-row__item partners-row__rosBank">
+                            <img src="img/partners/row4/1.png" alt="img">
+                        </div>
+                        <div class="partners-row__item">
+                            <img src="img/partners/row4/2.png" alt="img">
+                        </div>
+                        <div class="partners-row__item">
+                            <img src="img/partners/row4/3.png" alt="img">
+                        </div>
+                    </div>
+                    <!-- /.partners-row -->
+                </div>
+                <!-- /.partners-block -->
+                <div class="partners-mobBlock">
+                    <div class="partners-mobRow">
+                        <div class="partners-mobRow__mobItem">
+                            <img src="img/partners/mobVersion/row1/1.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow__mobItem">
+                            <img src="img/partners/mobVersion/row1/2.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow__mobItem">
+                            <img src="img/partners/mobVersion/row1/3.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow__mobItem">
+                            <img src="img/partners/mobVersion/row1/4.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow__mobItem">
+                            <img src="img/partners/mobVersion/row1/5.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow__mobItem">
+                            <img src="img/partners/mobVersion/row1/6.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                    </div>
+                    <!-- /.partners-mobRow -->
+                    <div class="partners-mobRow2">
+                        <div class="partners-mobRow2__mobItem3">
+                            <img src="img/partners/mobVersion/row2/1.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow2__mobItem2">
+                            <img src="img/partners/mobVersion/row2/2.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow2__mobItem2">
+                            <img src="img/partners/mobVersion/row2/3.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow2__mobItem2">
+                            <img src="img/partners/mobVersion/row2/4.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow2__mobItem4">
+                            <img src="img/partners/mobVersion/row2/5.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                        <div class="partners-mobRow2__mobItem2">
+                            <img src="img/partners/mobVersion/row2/6.png" alt="img">
+                        </div>
+                        <!-- /.partners-mobRow__mobItem -->
+                    </div>
+                    <!-- /.partners-mobRow -->
+                </div>
+                <!-- /.partners-mobBlock -->
+                <p class="partners-content__des">Деятельность осуществляется на основе Генеральных лицензий на осуществление банковских операций: №2766 от 27.11.2014г, №1326 от 16.01.2015г, №2564 от 11.02.2015г, №1481 от 11.08.2015г, №2673 от 24.03.2015г, №2306 от 11.07.2013 г</p>
+                <div class="partners-license">
+                    <img src="img/partners/license/1.png" alt="img" class="partners-license__item">
+                    <img src="img/partners/license/2.png" alt="img" class="partners-license__item">
+                    <img src="img/partners/license/3.png" alt="img" class="partners-license__item">
+                    <img src="img/partners/license/4.png" alt="img" class="partners-license__item">
+                    <img src="img/partners/license/5.png" alt="img" class="partners-license__item">
+                    <img src="img/partners/license/6.png" alt="img" class="partners-license__item">
+                </div>
+                <!-- /.partners-license -->
+                <div class="partners-moblicense">
+                    <div class="partners-slider">
+                        <div class="license-slider-item">
+                            <img src="img/partners/mobVersion/license/1.png" alt="img">
+                        </div>
+                        <!-- /.license-slider-item -->
+                        <div class="license-slider-item">
+                            <img src="img/partners/mobVersion/license/2.png" alt="img">
+                        </div>
+                        <!-- /.license-slider-item -->
+                        <div class="license-slider-item">
+                            <img src="img/partners/mobVersion/license/3.png" alt="img">
+                        </div>
+                        <!-- /.license-slider-item -->
+                        <div class="license-slider-item">
+                            <img src="img/partners/mobVersion/license/4.png" alt="img">
+                        </div>
+                        <!-- /.license-slider-item -->
+                        <div class="license-slider-item">
+                            <img src="img/partners/mobVersion/license/5.png" alt="img">
+                        </div>
+                        <!-- /.license-slider-item -->
+                        <div class="license-slider-item">
+                            <img src="img/partners/mobVersion/license/6.png" alt="img">
+                        </div>
+                        <!-- /.license-slider-item -->
+                    </div>
+                    <!-- /.license-slider -->
+                </div>
+                <!-- /.partners-license -->
+                <button class="button partners-button" onclick="windowUp()">Получить деньги</button>
+                <!-- /.button partners-button -->
+            </div>
+            <!-- /.partners-content -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.partners section -->
+    <div class="conditions section">
+        <div class="container">
+            <div class="conditions-content">
+                <h2 class="section-title conditions-content__title">Условия получения <br> кредита</h2>
+                <!-- /.section-title conditions-title -->
+                <p class="section-subtitle conditions-content__subtitle">Условия получения кредита зависят от банков, <br> но, в-целом, они будут следующими:</p>
+                <!-- /.section-subtitle conditions-content__subtitle -->
+                <div class="conditions-des">
+                    <div class="problems-features__item conditions-des__item">
+                        <span class="problems-features__text conditions-des__text">Минимальная процентная ставка - 4%</span>
+                    </div>
+                    <div class="problems-features__item conditions-des__item">
+                        <span class="problems-features__text conditions-des__text">Максимальная процентная ставка - 9%</span>
+                    </div>
+                    <div class="problems-features__item conditions-des__item">
+                        <span class="problems-features__text conditions-des__text">Минимальный срок погашения кредита - 6 месяцев</span>
+                    </div>
+                    <div class="problems-features__item conditions-des__item">
+                        <span class="problems-features__text conditions-des__text">Максимальный срок погашения кредита- 60 месяцев</span>
+                    </div>
+                </div>
+                <!-- /.conditions-content__des -->
+                <h3 class="conditions-content__about section-subtitle">Кредит вы будете получать в одном из банков Казани. <br> Дополнительных комиссий по кредиту нет. </h3>
+                <!-- /.conditions-content__about -->
+                <button class="button conditions-content__button" onclick="windowUp()">Получить деньги</button>
+                <!-- /.button conditions-button -->
+                <p class="conditions-content__lowText">При существенном нарушении заемщиком условий кредитного договора, банк вправе инициировать в судебном порядке следующие действия: взыскание долга по кредиту – ст.811, ст.395ГК РФ; обращение взыскания на залог- ст.349 ГК РФ; привлечение к солидарной ответственности поручителя по кредиту – ст.363 ГК РФ; обращение взыскания на иное имущество должника по кредиту – ст. 68 ст.69 ФЗ «Об исполнительном производстве». Указанные действия производятся службой ФССП совместно с банком в рамках исполнительного производства. Методы взыскания долга – взыскание денежных средств со счетов должника; обращение взыскания на залог и иное имущество заёмщика; привлечение к ответственности поручителей; взыскание в рамках исполнительного производства.</p>
+                <!-- /.conditions-content__lowText -->
+            </div>
+            <!-- /.conditions-content -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.conditions section -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <p class="footer-contacts__firmName">ООО «Люкс-Финанс»</p>
+                    <!-- /.footer-content__firmName -->
+                    <div class="footer-address">
+                        <img src="img/footer/home.png" alt="img">
+                        <a href="#" class="footer-address__text">ул. Гимназическая 65, офис 102</a>
+                    </div>
+                    <!-- /.footer-content__address -->
+                    <div class="footer-address footer-phone">
+                        <img src="img/footer/phone.png" alt="img">
+                        <a href="tel:+79381578077" class="footer-address__text footer-phone__text">+7-938-157-80-77</a>
+                    </div>
+                    <!-- /.footer-address footer-phone -->
+                </div>
+                <!-- /.footer-contacts -->
+                <a href="#" class="footer-logo"><img src="img/footer/logo.png" alt="img"></a>
+                <!-- /.footer-logo -->
+                <div class="footer-documents">
+                    <p class="footer-documents__item">ИНН: 2310221596</p>
+                    <!-- /.footer-documents__item -->
+                    <p class="footer-documents__item">ОГРН: 1202300057992</p>
+                    <!-- /.footer-documents__item -->
+                </div>
+                <!-- /.footer-documents -->
+            </div>
+            <!-- /.footer-content -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.footer -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(".partners-slider").slick({
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+        });
+    </script>
+    </script>
+</body>
+</html>

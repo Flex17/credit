@@ -1,0 +1,191 @@
+.problems
+    background: url(../../img/problems/bg.png) center center no-repeat
+    padding-bottom: 180px
+    padding-top: 120px
+    &-wrap
+        display: none
+    &-content
+        z-index: 100
+        flex-direction: column
+        &__title
+            margin-bottom: 40px
+        &__subtitle
+            display: block
+            margin-bottom: 25px
+    &-features
+        max-width: 673px
+        max-height: 172px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__item
+            margin-bottom: 20px
+            position: relative
+            padding-left: 20px
+            &::before
+                content: url("../../img/problems/dot.png")
+                position: absolute
+                left: 0
+        &__text
+            font-weight: 600
+            font-family: "Montserrat"
+            font-size: 18px
+            line-height: 1.2
+            max-width: 341px
+    &-firstBlock
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        flex-direction: column
+    &-man
+        position: absolute
+        top: 0
+        right: 10px
+    &-button--green
+        width: 100%
+        padding: 20px
+        margin-top: 71px
+        background: linear-gradient(180deg, #53D78E 0%, #40B072 100%)
+        border-radius: 54px
+        border: none
+        cursor: pointer
+        font-family: "Montserrat"
+        color: $white-color
+        line-height: 1.5
+        font-weight: 700
+        font-size: 24px
+    &-advantages
+        width: 100%
+        background: #EBECF0
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.35)
+        padding-top: 30px
+        padding-bottom: 60px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        &__text
+            text-align: center
+            font-family: "Montserrat"
+            font-weight: 500
+            font-size: 18px
+    &-button
+        display: block
+        margin: 62px auto 0px auto
+        max-width: 360px
+
+@media (min-width: 320px) and ( max-width:  576px)
+    .problems
+        background: $white-color
+        padding: 50px 0px
+        &-content
+            width: 80%
+            margin: 0 auto
+            flex-direction: column
+            &__title
+                font-size: 36px
+                margin-bottom: 30px
+            &__subtitle
+                font-size: 18px
+                margin-bottom: 20px
+        &-features
+            flex-direction: column
+            justify-content: left
+            align-items: flex-start
+            max-height: none
+            min-width: none
+        &-first-block
+            justify-content: left
+        &-secondBlock
+            justify-content: left
+        &-man
+            display: none
+        &-wrap
+            position: relative
+            width: 100%
+            height: 301px
+            display: block
+            &__manMobVersion
+                display: block
+                position: absolute
+                left: 0
+                right: 0
+                bottom: 0
+                margin: 0 auto
+                max-width: 260px
+        &-button--green
+            margin-top: 0
+            border-radius: 0
+            padding: 10px 30px
+            font-size: 18px
+        &-advantages
+            background: url("../../img/problems/adventages/bg.png") center center no-repeat
+            background-size: cover
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-top: 40px
+            &__item
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                flex-direction: column
+                &:not(&:last-child)
+                    margin-bottom: 60px
+        &-button
+            width: 100%
+            max-width: 260px
+            padding: 19px
+
+@media (min-width: 576px) and ( max-width:  700px)
+    .problems
+        &-features
+            flex-direction: column
+            justify-content: left
+            align-items: flex-start
+            max-height: none
+            min-width: none
+
+@media (min-width: 576px) and ( max-width:  1200px)
+    .problems
+        background: none
+        background-color: $white-color
+        padding: 50px 0
+        &-content
+            width: 90%
+            margin: 0 auto
+            &__title
+                font-size: 80px
+                margin-bottom: 30px
+            &__subtitle
+                font-size: 20px
+        &-features
+            justify-content: space-between
+            align-items: flex-start
+            max-height: none
+            min-width: none
+        &-advantages
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            &__item
+                margin-bottom: 25px
+                margin-top: 25px
+        &-man
+            display: none
+        &-wrap
+            display: block
+            position: relative
+            width: 100%
+            height: 301px
+            &__manMobVersion
+                position: absolute
+                display: block
+                margin: 0 auto
+                bottom: 0
+                right: 0
+                left: 0
+        &-button--green
+            margin-top: 0
+        &-button
+            max-width: 360px

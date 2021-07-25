@@ -1,0 +1,166 @@
+.partners
+    background: url(../../img/partners/bg.png) center center no-repeat
+    &-mobBlock
+        display: none
+    &-content
+        &__title
+            text-align: center
+            margin-bottom: 20px
+        &__mobVersion
+            display: none
+        &__des
+            font-weight: 500
+            font-family: "Montserrat"
+            font-size: 18px
+            line-height: 1.4
+            max-width: 1096px
+            display: block
+            margin: 80px auto 40px auto
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: 387px
+    &-row
+        display: flex
+        flex-direction: column
+        height: 100%
+        &:nth-child(3)
+            align-items: center
+        &:nth-child(4)
+            align-items: center
+        &:not(&:last-child)
+            padding-top: 30px
+        &__rosBank
+            margin-bottom: 20px !important
+        &__homeCreditBank
+            margin-bottom: 80px !important
+        &__item
+            display: flex
+            align-items: center
+            &:not(&:last-child)
+                margin-bottom: 60px
+    &-license
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-moblicense
+        display: none
+    &-button
+        display: block
+        margin: 60px auto 0px auto
+
+@media (min-width: 320px) and ( max-width:  576px)
+    .partners
+        padding: 50px 0
+        margin: 0 auto
+        width: 80%
+        background: url("../../img/partners/mobVersion/bg.png") center center no-repeat
+        &-content
+            &__title
+                font-size: 36px
+            &__mobVersion
+                display: block
+                text-align: left
+            &__deskVersion
+                display: none
+            &__des
+                font-size: 10px
+                margin-top: 40px
+        &-block
+            display: none
+        &-mobBlock
+            display: block
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+        &-mobRow
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: center
+            flex-basis: 50%
+            &__mobItem
+                &:not(&:last-child)
+                    margin-bottom: 27px
+        &-mobRow2
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: center
+            flex-basis: 50%
+            &__mobItem2
+                margin: 0 auto
+                &:not(&:last-child)
+                    margin-bottom: 33px
+            &__mobItem3
+                margin: 0 auto
+                margin-bottom: 18px !important
+            &__mobItem4
+                margin: 0 auto
+                margin-bottom: 25px
+        &-license
+            display: none
+        &-moblicense
+            display: block
+            max-width: 260px
+            margin: 0 auto
+        &-slider
+            // display: flex
+            // justify-content: space-between
+            // align-items: start
+            max-width: 260px
+        &-button
+            width: 100%
+            max-width: 260px
+            padding: 19px
+            margin-top: 40px
+
+    .slick-slide
+        margin: 10px
+    .slick-active
+    img
+        width: 100%
+    .license-slider-item
+        max-width: 100%
+
+@media (min-width: 840px) and ( max-width:  1047px)
+    .partners
+        &-block
+            height: 700px
+        &-row
+            &:nth-child(4)
+                display: flex
+                justify-content: space-between
+                align-items: center
+                flex-direction: row
+                width: 100%
+
+@media (min-width: 576px) and ( max-width:  1150px)
+    .partners
+        &-block
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+@media (min-width: 576px) and ( max-width:  1250px)
+    .partners
+        background: url("../../img/partners/bg.png") center center no-repeat
+        padding: 0
+        &-content
+            width: 90%
+            margin: 0 auto
+            padding-top: 50px
+            padding-bottom: 50px
+            &__title
+                font-size: 80px
+        &-block
+            display: none
+        &-mobicense
+            display: none
+        &-license
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap

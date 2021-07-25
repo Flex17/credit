@@ -1,0 +1,91 @@
+.main
+    background: url("../../img/main/bg.png") center center no-repeat
+    background-size: cover
+    &-content
+        flex-direction: column
+        &__title
+            font-size: 96px
+            color: $white-color
+            text-shadow: 0px 0px 16px rgba(43, 255, 140, 0.47)
+            text-transform: uppercase
+            font-family: "Bebas Neue"
+            font-weight: 700
+        &__subtitle
+            font-size: 48px
+            color: $white-color
+            text-shadow: 0px 0px 16px rgba(43, 255, 140, 0.47)
+            text-transform: uppercase
+            font-family: "Bebas Neue"
+            font-weight: 700
+        &__about
+            color: #26F066
+            font-family: "Montserrat"
+            font-size: 24px
+            font-weight: 700
+            margin-top: 56px
+            margin-bottom: 40px
+    &-advantages
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        flex-direction: column
+        font-family: "Montserrat"
+        font-size: 18px
+        font-weight: 500
+        color: $white-color
+        line-height: 1.4
+        &__item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &:not(&:last-child)
+                margin-bottom: 30px
+
+        &__text
+            max-width: 307px
+            margin-left: 20px
+    &-button
+        margin-top: 40px
+
+@media (min-width: 320px) and ( max-width:  576px)
+    .main
+        padding-top: 50px
+        padding-bottom: 385px
+        background: url(../../img/main/mobVersion/bg.png) center bottom no-repeat
+        background-size: cover
+        &-content
+            width: 80%
+            margin: 0 auto
+            &__title
+                font-size: 64px
+            &__subtitle
+                font-size: 31px
+            &__about
+                margin-top: 20px
+                font-size: 18px
+                color: $white-color
+        &-advantages
+            &__text
+                font-size: 12px
+            img
+                width: 22px
+        &-button
+            width: 260px
+            padding: 19px 45px
+
+@media (min-width: 576px) and ( max-width:  1000px)
+    .main
+        background: url("../../img/main/mobVersion/bg.png") center center no-repeat
+        background-size: cover
+        padding-top: 60px
+
+        &-content
+            width: 90%
+            margin: 0 auto
+
+@media (min-width: 1000px) and ( max-width:  1250px)
+    .main
+        padding-top: 60px
+        &-content
+            width: 85%
+            margin: 0 auto
