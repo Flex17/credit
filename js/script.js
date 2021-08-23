@@ -1,25 +1,63 @@
-//Открытие и закрытие модального окна
+window.addEventListener('DOMContentLoaded', function () {
+   //* Открытие и закрытие модального окна
 
-function windowUp () {
-document.getElementById('modal').style.display="block";
-}
+    const modal = document.querySelector('.modal'),
+          modalClose = document.querySelector('.modal-close'),
+          modalOpen = document.querySelectorAll('[data-open]');
 
-function windowClose () {
-document.getElementById('modal').style.display="none";
-document.body.style.backgroundColor = '#EEEEEE';
-}
+    function showModal () {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    
+    function closeModal () {
+        modal.classList.remove('show');
+        modal.classList.add('hide');
+        // document.body.style.backgroundColor = '#EEEEEE';
+        document.body.style.overflow = '';
+    }
 
-function trueOpen () {
-document.getElementById('true').style.display="block";
-document.getElementById('false').style.display="none";
-}
+    modalOpen.forEach(element => {
+        element.addEventListener('click', function () {
+           showModal(); 
+        });
+    });
 
-function falseClose () {
-document.getElementById('true').style.display="none";
-document.getElementById('false').style.display="block";
-}
+    modalClose.addEventListener('click', function () {
+       closeModal(); 
+    });
 
-//отправка формы обратной связи
+    document.addEventListener('keydown', function (e) {
+        if (e.code === "Escape" && modal.classList.contains('show')) {
+            closeModal();
+        }
+    });
+
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal || e.target.getAttribute('data-close') == "") {
+            closeModal();
+        } 
+    });
+
+    const unchecked = document.querySelector('#false'),
+          checked = document.querySelector('#true');
+
+    unchecked.addEventListener('click', function () {
+        unchecked.classList.add('hide');
+        checked.classList.add('show');
+        checked.classList.remove('hide');
+    });
+
+    checked.addEventListener('click', function () {
+        checked.classList.add('hide');
+        unchecked.classList.remove('hide');
+        checked.classList.add('show');
+    });
+});
+
+//* отправка формы обратной связи
 
 $(document).ready(function () {
     $("form").submit(function () {

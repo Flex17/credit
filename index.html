@@ -14,11 +14,11 @@
     <title>Credit</title>
 </head>
 <body>
-    <div class="modal" id="modal">
+    <div class="modal hide" id="modal">
         <div class="modal-body">
-            <a class="modal-close" onclick="windowClose()">
+            <div class="modal-close">
                 <img src="img/modal/close.png" alt="img">
-            </a>
+            </div>
             <!-- /.modal-close -->
             <form action="#" method="POST" class="form modal-form" id="form">
                 <h2 class="section-title modal-body__title">Оставь свои <br> контактные данные</h2>
@@ -32,8 +32,8 @@
                 <!-- /.button modal-body__button -->
                 <div class="modal-accept">
                     <div class="modal-accept__square">
-                        <img class="modal-accept__false" id="false" src="img/modal/false.png" alt="img" onclick="trueOpen()">
-                        <img class="modal-accept__true" id="true" src="img/modal/true.png" alt="img" onclick="falseClose()">
+                        <img class="modal-accept__false" id="false" src="img/modal/false.png" alt="img">
+                        <img class="modal-accept__true hide" id="true" src="img/modal/true.png" alt="img">
                     </div>
                     <!-- /.modal-accept__square -->
                     <p class="modal-accept__text">Согласен на обработку персональных данных в соответствии с политикой конфиденциальности</p>
@@ -46,7 +46,6 @@
         <!-- /.modal-body -->
     </div>
     <!-- /.modal -->
-
     <div class="nav">
         <div class="container">
             <div class="nav-block">
@@ -90,7 +89,7 @@
                     <!-- /.main-advantages__item -->
                 </div>
                 <!-- /.main-advantages -->
-                <button class="button main-button" onclick="windowUp()">Получить деньги</button>
+                <button class="button main-button" data-open>Получить деньги</button>
                 <!-- /.button main-button -->
             </div>
             <!-- /.main-content -->
@@ -141,7 +140,7 @@
                     <img class="problems-wrap__manMobVersion" src="img/problems/mobVersion/man.png" alt="img">
                 </div>
                 <!-- /.problems-wrap -->
-                <button class="problems-button--green" onclick="windowUp()">Оставьте заявку и мы подберем кредит <br> на максимально выгодных условиях</button>
+                <button class="problems-button--green" data-open>Оставьте заявку и мы подберем кредит <br> на максимально выгодных условиях</button>
                 <!-- /.problems-button--green -->
                 <div class="problems-advantages">
                     <div class="problems-advantages__item">
@@ -166,7 +165,7 @@
                     <!-- /.problems-advantages__item -->
                 </div>
                 <!-- /.problems-advantages -->
-                <button class="button problems-button" onclick="windowUp()">Получить деньги</button>
+                <button class="button problems-button" data-open>Получить деньги</button>
                 <!-- /.button problems-button -->
             </div>
             <!-- /.problems-content -->
@@ -329,7 +328,7 @@
                     <!-- /.license-slider -->
                 </div>
                 <!-- /.partners-license -->
-                <button class="button partners-button" onclick="windowUp()">Получить деньги</button>
+                <button class="button partners-button" data-open>Получить деньги</button>
                 <!-- /.button partners-button -->
             </div>
             <!-- /.partners-content -->
@@ -361,7 +360,7 @@
                 <!-- /.conditions-content__des -->
                 <h3 class="conditions-content__about section-subtitle">Кредит вы будете получать в одном из банков Казани. <br> Дополнительных комиссий по кредиту нет. </h3>
                 <!-- /.conditions-content__about -->
-                <button class="button conditions-content__button" onclick="windowUp()">Получить деньги</button>
+                <button class="button conditions-content__button" data-open>Получить деньги</button>
                 <!-- /.button conditions-button -->
                 <p class="conditions-content__lowText">При существенном нарушении заемщиком условий кредитного договора, банк вправе инициировать в судебном порядке следующие действия: взыскание долга по кредиту – ст.811, ст.395ГК РФ; обращение взыскания на залог- ст.349 ГК РФ; привлечение к солидарной ответственности поручителя по кредиту – ст.363 ГК РФ; обращение взыскания на иное имущество должника по кредиту – ст. 68 ст.69 ФЗ «Об исполнительном производстве». Указанные действия производятся службой ФССП совместно с банком в рамках исполнительного производства. Методы взыскания долга – взыскание денежных средств со счетов должника; обращение взыскания на залог и иное имущество заёмщика; привлечение к ответственности поручителей; взыскание в рамках исполнительного производства.</p>
                 <!-- /.conditions-content__lowText -->
