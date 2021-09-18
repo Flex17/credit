@@ -85,3 +85,28 @@ a {
 .hide {
   display: none !important;
 }
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeueRegular.woff2") format("woff2");
+  src: url("/fonts/BebasNeueRegular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geometria";
+  src: url("/fonts/Geometria-Regular.woff2") format("woff2");
+  src: url("/fonts/Geometria-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+  src: url("/fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+}
