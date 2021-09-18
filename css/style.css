@@ -36,7 +36,7 @@ a {
   filter: drop-shadow(0px 0px 20px #FFB84E);
   border-radius: 35px;
   font-weight: 700;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 24px 95px;
   color: #000;
@@ -69,8 +69,8 @@ a {
 
 .section-title {
   font-weight: 700;
-  font-family: "Bebas Neue", serif;
-  font-size: 96px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
   color: #3F434E;
   text-transform: uppercase;
   line-height: 1;
@@ -78,7 +78,7 @@ a {
 
 .section-subtitle {
   font-size: 24px;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #000;
   line-height: 1.5;
@@ -136,7 +136,7 @@ a {
   color: #5BFF7A;
   font-size: 18px;
   font-weight: 800;
-  font-family: "Geometria", serif;
+  font-family: "Geometria", sans-serif;
   margin-left: 18px;
 }
 
@@ -156,7 +156,7 @@ a {
   font-size: 14px;
   font-weight: 800;
   color: #fff;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   color: #D1D0D0;
   margin-left: 7px;
 }
@@ -205,7 +205,7 @@ a {
   color: #fff;
   text-shadow: 0px 0px 16px rgba(43, 255, 140, 0.47);
   text-transform: uppercase;
-  font-family: "Bebas Neue", serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
 }
 
@@ -214,13 +214,13 @@ a {
   color: #fff;
   text-shadow: 0px 0px 16px rgba(43, 255, 140, 0.47);
   text-transform: uppercase;
-  font-family: "Bebas Neue", serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
 }
 
 .main-content__about {
   color: #26F066;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin-top: 56px;
@@ -241,7 +241,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -377,7 +377,7 @@ a {
   color: #5BFF7A;
   font-size: 18px;
   font-weight: 800;
-  font-family: "Geometria", serif;
+  font-family: "Geometria", sans-serif;
   margin-left: 18px;
 }
 
@@ -397,7 +397,7 @@ a {
   font-size: 14px;
   font-weight: 800;
   color: #fff;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   color: #D1D0D0;
   margin-left: 7px;
 }
@@ -484,7 +484,7 @@ a {
 
 .problems-features__text {
   font-weight: 600;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   max-width: 341px;
@@ -521,7 +521,7 @@ a {
   border-radius: 54px;
   border: none;
   cursor: pointer;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   line-height: 1.5;
   font-weight: 700;
@@ -548,7 +548,7 @@ a {
 
 .problems-advantages__text {
   text-align: center;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
@@ -796,7 +796,7 @@ a {
 
 .partners-content__des {
   font-weight: 500;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.4;
   max-width: 1096px;
@@ -1243,7 +1243,7 @@ a {
 
 .footer-contacts__firmName {
   font-weight: 700;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -1264,7 +1264,7 @@ a {
 .footer-address__text {
   color: #D1D0D0;
   font-weight: 400;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin-left: 10px;
   color: #B9BABE;
@@ -1288,7 +1288,7 @@ a {
 
 .footer-documents__item {
   font-weight: 500;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #D1D0D0;
   text-align: right;
@@ -1430,7 +1430,7 @@ a {
 }
 
 .modal-body__title {
-  font-family: "Bebas Neue", serif;
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -1439,7 +1439,7 @@ a {
 
 .modal-body__subtitle {
   font-weight: 500;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 20px;
@@ -1447,7 +1447,7 @@ a {
 
 .modal-body__input {
   font-weight: 400;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   display: block;
   background-color: #F2F2F2;
@@ -1495,7 +1495,7 @@ a {
   color: #717171;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3;
 }
 
